@@ -1,0 +1,65 @@
+nav {
+	display: flex;
+	background-color: #6495ed; 
+	padding: 15px;
+	flex-direction: row;
+}
+#sign-in{
+	margin-left: auto;
+}
+button {
+	margin-right: 10px;
+	padding: 15px 10px;
+	background-color: #ff6347;
+	color: #ffffff;
+	border: 0;
+}
+.event-conteiner{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 5px;
+}
+.desc {
+	background-color: beige;
+	padding: 15px;
+	flex-grow: 1;
+}
+.date {
+	flex: 0 0 200px;
+	padding: 15px;
+	border: solid 1px antiquewhite;
+	background-color: #fffaf0
+}
+.job {
+	display: flex;
+	flex-direction: row;
+	padding: 5px 5px;
+}
+.job-dev {
+	flex: 0 0 200px;
+	margin: 10px;
+	padding: 15px;
+	background-color: brown;
+	color: white;
+
+}
+.job-lor {
+	display: flex;
+	padding: 15px;
+	margin: 10px;
+	background-color: #d2691e;
+	color: white;
+}
+.apply-burtton {
+ padding: 15px;
+ color: white;
+ background-color: brown;
+ align-self: flex-end;
+ border-radius: 5px;
+ border: solid 1px #680a0a;
+}
+@media (min-width: 300px) {
+	.job-dev {
+		flex-wrap: wrap;
+	}
+}
