@@ -1,0 +1,64 @@
+body {
+	background-image: url(space.jpg);
+}
+
+
+.orbit {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	margin: 0px;
+	top: 20%;
+	left: 33%;
+	margin-right: -50%;
+	transform: translate( -50%, -50%);
+	border-radius: 500px;
+	border: 3px solid white;
+	-webkit-animation-name: spin;
+    -moz-animation-name: spin;
+    -o-animation-name: spin;
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sun {
+	position: absolute;
+	background-color: #EE9F00;
+	width: 150px;
+	height: 150px;
+	margin: -75px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50px;
+	border-radius: 100px;
+
+}
+
+.mars {
+	background-color: #93392F;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	top: 20px;
+	left: 20px;
+	margin: 34px;
+
+
+}
+
+.sun:hover {
+	transition: 1s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.orbit:hover {
+	animation-play-state: paused;
+
+}
+@keyframes spin {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(360deg)}
+}
