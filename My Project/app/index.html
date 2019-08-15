@@ -2,15 +2,15 @@
 <html >
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>Landscaping</title>
     <!-- Власні стилі -->
     <link rel="stylesheet" href="style/css/main.css">
     <link rel="stylesheet" href="style/sass/animate.css">
 
-
     <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
-
+ 
     <!-- Підключення шрифтів -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
 
@@ -22,7 +22,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-<!------------ HEADER ------------------->
+<!---------------------------------------------------------------- HEADER ------------------->
 
 <div id="header-fixed-scroll" class="header-fixed">
     <div class="header__container">
@@ -37,12 +37,12 @@
                     <li class="menu-item"><a href="#">Продукція</a></li>
                     <li class="menu-item"><a href="#">Про нас</a></li>
                     <li class="menu-item"><a href="#">Контакти</a></li>
-                    <li class="menu-item menu-item-icon"><a href="#">&#9776</a> </li>
+                    <li class="menu-item"><a id="menu" class="menu-item-icon" href="#">&#9776</a> </li>
                 </ul>
             </div>
         </div>
         <div class="header__social">
-            <div class="footer-social-icon">
+            <div class="header-social-icon">
                 <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
                 <button class="header-button">Вхід</button>
@@ -55,7 +55,7 @@
 
 <div class="container-home">
         <div class="home-text">
-            <h1 class="animated animatedFadeInUp fadeInUp" style="font-size:50px">I am Jane Doe</h1>
+            <h1 class="animated animatedFadeInUp fadeInUp" >I am Jane Doe</h1>
             <h3 class="animated animatedFadeInUp fadeInUp">And I'm a Photographer</h3>
         </div>
 </div>
@@ -137,7 +137,7 @@
     </div>
 </section>
 
-<!------------PORTFOLIO ------------------->
+<!--------------------------------------------------------------PORTFOLIO ------------------->
 <section class="portfolio landing-section">
     <div class="portfolio-header">
         <h3>Портфоліо</h3>
@@ -178,7 +178,7 @@
 </section>
 
 
-<!------------ COMPANY ------------------->
+<!------------------------------------------------------------- COMPANY ------------------->
 <section class="company landing-section">
     <div class="company__header">
         <h3>Наші клієнти</h3>
@@ -199,8 +199,68 @@
         </div>
     </div>
 </section>
+<!------------------------------------------------------------- CONTACT ------------------->
+<section class="contact landing-section">
+    <div class="contact__header">
+        <h3>Звяжіться з нами!</h3>
+    </div>
+    <div class="contact__element">
+        <div class="contact_width contact__element__phone" >
+            <div><h4>Контакти</h4></div>
+            <div>
+                <ul>
+                    <li><img src="img/company/15886.png"><p>+380681111111</p></li>
+                    <li><img src="img/company/whatsapp-png-whatsapp-icon-16.jpg"><p>+380681111102</p></li>
+                    <li><img src="img/company/addres.png"><p>м. Тернопіль вул.Центральна 1а </p></li>
+                    <li><img src="img/company/email.png"><p>landscaping@gmail.com</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact_width contact__element__maps">
+            <div id="map"></div>
+        </div>
+        <div class="contact_width contact__element__form ">
+            <div class="container">
+                <h4>Зворотній звязок</h4>
+                <form id="mainForm">
+                    <input type="email" id="email" name="email" placeholder="Email"  class="form-control"><br>
+                    <input type="text" id="name" name="name" placeholder="Ведіть імя" class="form-control"><br>
+                    <input type="phone" id="phone" name="phone" placeholder="Телефон" class="form-control"><br>
+                    <textarea name="massage" id="massage" placeholder="Massage" class="form-control"></textarea><br>
+                    <button type="button" id="sendMail" class="btn btn-success" >Відправити</button>
+                </form>
+                <div id="errorMess" style="color: white"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------------------------------------------- FOOTER ---------------------------------------->
+<section class="footer ">
+        <div class="footer__container">
+            <div class="footer__container-coll-3">
+                <h6 class="footer-name">Landscaping</h6>
+                <p>Вирішить всі ваші проблеми!</p>
+            </div>
 
+            <div class="footer__container-coll-3">
+                <h6 class="footer-social">Наш профіль в соціальних мережах:</h6>
+                <p class="footer-social-icon">
+                    <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://vk.com" target="blank"><i class="fa fa-vk"></i></a>
+                    <a href="https://twitter.com" target="blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="blank"><i class="fa fa-youtube"></i></a>
+                </p>
 
+            </div>
+
+            <div class="footer__container-coll-3">
+                <h6>Потрібно шось тут написати</h6>
+                <p>Потрібно шось тут написати!</p>
+            </div>
+
+        </div>
+</section>
 
 <!--Підключаємо jquery-->
 <script src="libs/jquery/jquery-3.4.1.min.js"></script>
@@ -208,6 +268,9 @@
 <script src="libs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 
 <script src="js/main.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa0cdtOy9YtkyBqvUutHMsiTzkRayfoWA&callback=initMap"
+        async defer></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -3,7 +3,7 @@
 a
   color: white
   text-decoration: none
-
+//-----------------------------------------------------HEADER--------------------------------------------------------
 .header-fixed
   position: absolute
   width: 100%
@@ -61,18 +61,28 @@ a
   background-color: white
   border-radius: 2px
 
+//.menu__container__ul.responsive
+//  position: relative
+//
+//.menu__container__ul.responsive a.menu-item-icon
+//  position: absolute
+//
+//.menu__container__ul.responsive a
+//  display: block
+//  text-align: left
+
 .header__social
   color: white
   right: 50px
 
-.footer-social-icon a
+.header-social-icon a
   color: #FFF
   padding: 15px 15px 15px 15px
   transition: 0.2s ease-out
   font-size: 20px
   //margin-right: 0
 
-.footer-social-icon a:hover
+.header-social-icon a:hover
   color: green
   background-color: white
   border-radius: 2px
@@ -110,7 +120,9 @@ a
   transform: translate(-50%, -50%)
   color: white
 
-
+.home-text h1
+  font-size: 50px
+//-----------------------------------------------ABOUT----------------------------------------------------------
 .landing-section
   padding: 40px 60px 40px 60px
 
@@ -164,7 +176,7 @@ a
 .choose-items-right img
   float: left
 
-
+//--------------------------------------------------------PORTFOLIO------------------------------------------------
 .portfolio
   background-color: #191919
   color: white
@@ -172,6 +184,7 @@ a
 
 .portfolio-main
   border-bottom: 1px solid #FFFFFF
+  padding-bottom: 5px
 
 .portfolio-header
   border-bottom: 1px solid #FFF
@@ -229,11 +242,12 @@ a
   background-color: white
   border-radius: 2px
 
-
+//-------------------------------------------------КАРУСЕЛЬ--------------------------------------------------
 .company
   background-color: white
   color: #191919
   box-shadow: 0 10px 11px 0 rgba(140,138,140,0.53)
+  border-bottom: 1px solid #000
 
 .company__header
   border-bottom: 1px solid #000
@@ -242,39 +256,138 @@ a
 .carousel
   margin: 80px 0
 
+
+
+// -------------------------------------------------контейнер звязку --------------------------------------------
+.contact
+  background-color: #191919
+  color: #FFFFFF
+
+
+.contact__header
+  border-bottom: 1px solid #FFFFFF
+
+.contact__element
+  display: flex
+  justify-content: space-between
+  padding: 50px 15px
+
+.contact_width
+  width: 33%
+  padding: 30px 0
+
+.contact__element__phone
+  border-right:  1px solid white
+  border-left:  1px solid white
+  padding-left: 10px
+
+.contact__element__phone img
+  width: 24px
+  float: left
+  margin: 0 25px 0 0
+
+.contact__element__phone ul
+  list-style-type: none
+  margin: auto
+  padding: 20px 0 0 20px
+
+.contact__element__maps
+  height: 100%
+  margin: 0
+  padding: 0
+.contact__element__form
+  border-left:  1px solid white
+  border-right:  1px solid white
+
+#map
+  height: 350px
+
+//-------------------------------------------------------FOOTER-----------------------------------
+.footer__container
+  display: flex
+  justify-content: space-between
+  padding: 0 30px
+
+.footer
+  background-color: #000
+  color: #fff
+  border-top: 2px solid white
+  padding: 20px 60px
+
+.footer__container-coll-3 p
+  padding-top: 8px
+  font-size: 12px
+
+.footer-social-icon a
+  color: #FFF
+  padding: 15px 15px 15px 15px
+  transition: 0.2s ease-out
+  font-size: 20px
+
+
+.footer-social-icon a:hover
+  color: green
+  background-color: white
+  border-radius: 2px
+
+
+// ----------------------------------------------------MEDIA---------------------------------------------------------
 @media screen and (max-width: 1300px)
   .menu__container__ul li a
     margin-left: 5px
     padding: 15px 5px 15px 5px
 
-  .footer-social-icon a
-      margin-right: 15px
   .header-button
       margin-right: 10px
   .column
     flex: 50%
     max-width: 50%
 
+  .contact__element
+    padding: 20px 0
+
+
 @media screen and (max-width: 1000px)
   .header-fixed
     padding: 20px 0
   .header__container
     margin: 0 10px
-  .footer-social-icon a
-    padding: 15px 5px
+  .header-social-icon a
+    padding: 15px 15px
   .header-button
     margin-right: 0
 
   .section-ready-about
     display: block
+
+
+  .footer-social-icon a
+    padding: 10px 10px
+
+
+
   .section-ready-about-img img
-    width: 100%
+    width: 33%
     height: auto
   .section-ready-about-text
     padding-top: 30px
 
 
-@media screen and (max-width: 860px)
+  .contact__element
+    display: block
+
+
+  .contact__element div
+    width: 100%
+
+
+  .footer__container-coll-3 h6
+     font-size: 12px
+
+  .footer__container-coll-3 p
+    font-size: 8px
+
+@media screen and (max-width: 900px)
   .menu-item:last-child
     display: block
   .menu-item:not(:last-child)
@@ -282,6 +395,10 @@ a
 
   .landing-section
     padding: 20px 20px
+
+
+  .footer
+    padding: 20px 0 0 0
 
 
 @media screen and (max-width: 700px)
@@ -296,6 +413,30 @@ a
   .choose-items-right
     border-left: 2px solid green
 
+  .footer__container
+    display: block
+  .footer__container-coll-3
+    text-align: center
+    padding-bottom: 10px
+
+  .footer__container-coll-3 p
+    padding-top: 0
+
 @media screen and (max-width: 450px)
-  .footer-social-icon a
+  .header-social-icon a
     display: none
+
+  .home-text h1
+     font-size: 35px
+  body h2
+    font-size: 28px
+  body h3
+    font-size: 24px
+  body h4
+    font-size: 16px
+  body h5
+    font-size: 14px
+  body p
+    font-size: 10px
+  .column__image-text span
+    font-size: 16px
