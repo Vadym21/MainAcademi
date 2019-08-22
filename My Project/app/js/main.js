@@ -1,5 +1,5 @@
 // Фіксація шапки при скролі
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('#header-fixed-scroll').removeClass("default");
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1){
@@ -8,8 +8,7 @@ $(document).ready(function(){
             $("#header-fixed-scroll").removeClass("default");
         }
     });
-});
-
+});*/
 
 
 //
@@ -168,47 +167,5 @@ function initMap() {
 
 }
 
-//------------------------------- Форма зворотнього звязку-----------------------------------------------
-$("#sendMail").on("click", function(){
-    var email = $("#email").val().trim();
-    var name = $("#name").val().trim();
-    var phone = $("#phone").val().trim();
-    var massage = $("#massage").val().trim();
-
-    if (email == "") {
-        $("#errorMess").text("Ввудіть email");
-        return false;
-    } else if (name == "") {
-        $("#errorMess").text("Ввудіть імя");
-        return false;
-    } else if (phone == "") {
-        $("#errorMess").text("Ввудіть телефон");
-        return false;
-    } else if (massage == "") {
-        $("#errorMess").text("Ввудіть повідомлення");
-        return false;
-    }
-
-
-    $("#errorMess").text("");
-
-
-    $.ajax({
-        url: 'mail.php',
-        type : 'POST',
-        cache : false,
-        date: { 'name':name, 'email':email, 'phone':phone, 'massage':massage},
-        dataType: 'html',
-        beforeSend: function() {
-            $("#sendMail").prop("disabled", true);
-        },
-        success: function(date){
-            if(!date)
-                alert("Винкла помилка, повідомлення не відправлено!");
-            else("#mainForm").trigger("reset");
-
-            $("#sendMail").prop("disabled", false);
-        }
-    });
-
-});
+// зробити редірект
+//пагінацію

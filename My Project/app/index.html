@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landscaping</title>
     <!-- Власні стилі -->
     <link rel="stylesheet" href="style/css/main.css">
@@ -45,7 +46,7 @@
             <div class="header-social-icon">
                 <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
-                <button class="header-button">Вхід</button>
+                <a class="header-button" href="login.html">Вхід</a>
 <!--                <button class="header-button">Sign up</button>-->
             </div>
         </div>
@@ -220,20 +221,22 @@
             <div id="map"></div>
         </div>
         <div class="contact_width contact__element__form ">
-            <div class="container">
-                <h4>Зворотній звязок</h4>
-                <form id="mainForm">
-                    <input type="email" id="email" name="email" placeholder="Email"  class="form-control"><br>
-                    <input type="text" id="name" name="name" placeholder="Ведіть імя" class="form-control"><br>
-                    <input type="phone" id="phone" name="phone" placeholder="Телефон" class="form-control"><br>
-                    <textarea name="massage" id="massage" placeholder="Massage" class="form-control"></textarea><br>
-                    <button type="button" id="sendMail" class="btn btn-success" >Відправити</button>
-                </form>
-                <div id="errorMess" style="color: white"></div>
-            </div>
+                <div class="form__wrapper">
+                    <form action="telegramform/php/send-message-to-telegram.php" id="form-contact" method="POST" class="form-element" autocomplete="off">
+                        <h4 class="form-title">Замовте зворотній звязок</h4>
+                        <p class="form-message"></p>
+                        <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Введите ваше имя" required>
+                        <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Введите ваш телефон" required>
+                        <input name="email" type="email" class="form-input__email" tabindex="0" placeholder="Email" required>
+                        <textarea name="message"  class="form-input__message" placeholder="Повідомлення" cols="40" rows="5"></textarea>
+                        <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
+                        <input type="submit" class="form-input__button" value="Отправить">
+                    </form>
+                </div>
         </div>
     </div>
 </section>
+
 <!--------------------------------------------------------------- FOOTER ---------------------------------------->
 <section class="footer ">
         <div class="footer__container">
@@ -262,12 +265,16 @@
         </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <!--Підключаємо jquery-->
 <script src="libs/jquery/jquery-3.4.1.min.js"></script>
 
 <script src="libs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 
 <script src="js/main.js"></script>
+
+<script src="telegramform/js/telegramform.js"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa0cdtOy9YtkyBqvUutHMsiTzkRayfoWA&callback=initMap"
         async defer></script>

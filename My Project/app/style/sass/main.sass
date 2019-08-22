@@ -1,13 +1,17 @@
+@import "../css/form_style.css"
+
 *
-  font-family: Merriweather
+  font-family: 'Abel', sans-serif
+
+// 'Abel', sans-serif; Merriweather;
 a
   color: white
   text-decoration: none
 //-----------------------------------------------------HEADER--------------------------------------------------------
 .header-fixed
-  position: absolute
+  position: sticky
+  top: 0
   width: 100%
-  padding: 20px
   color: white
   background: #191919
   z-index: 9999
@@ -20,7 +24,7 @@ a
   display: flex
   justify-content: space-between
   align-items: center
-  margin: 0 30px 0 30px
+  margin: 0 30px
 
 .header__logo
   position: relative
@@ -47,7 +51,7 @@ a
 .menu__container__ul li a
   color: white
   text-decoration: none
-  padding: 15px 25px 15px 25px
+  padding: 13px 25px
   margin-left: 0
   transition: 0.2s ease-out
 
@@ -77,7 +81,7 @@ a
 
 .header-social-icon a
   color: #FFF
-  padding: 15px 15px 15px 15px
+  padding: 11px 15px
   transition: 0.2s ease-out
   font-size: 20px
   //margin-right: 0
@@ -294,7 +298,8 @@ a
 .contact__element__maps
   height: 100%
   margin: 0
-  padding: 0
+  padding-top: 90px
+
 .contact__element__form
   border-left:  1px solid white
   border-right:  1px solid white
@@ -335,7 +340,7 @@ a
 @media screen and (max-width: 1300px)
   .menu__container__ul li a
     margin-left: 5px
-    padding: 15px 5px 15px 5px
+    padding: 13px 5px
 
   .header-button
       margin-right: 10px
@@ -348,12 +353,12 @@ a
 
 
 @media screen and (max-width: 1000px)
-  .header-fixed
-    padding: 20px 0
+  //.header-fixed
+  //  padding: 20px 0
   .header__container
     margin: 0 10px
   .header-social-icon a
-    padding: 15px 15px
+    padding: 11px 15px
   .header-button
     margin-right: 0
 
@@ -380,6 +385,9 @@ a
   .contact__element div
     width: 100%
 
+  .contact__element__form
+    display: flex
+    justify-content: center
 
   .footer__container-coll-3 h6
      font-size: 12px
