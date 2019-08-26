@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landscaping</title>
+    <!-- Власні стилі -->
+    <link rel="stylesheet" href="../style/css/main.css">
+
+    <!-- Стилі Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Підключення іконок -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/houzz.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+<!---------------------------------------------------------------- HEADER ------------------->
+
+<div id="header-fixed-scroll" class="header-fixed">
+    <div class="header__container">
+        <div class="header__logo">
+            <a class="header__logo__a" href="../index.html"><img src="https://img.icons8.com/color/48/000000/houzz.png">Landscaping</a>
+        </div>
+        <div class="header__menu ">
+            <div class="menu__container">
+                <ul class="menu__container__ul" id="myTopmenu">
+                    <li class="menu-item"><a href="../index.html">Головна</a></li>
+                    <li class="menu-item"><a href="portfolio.html">Портфоліо</a></li>
+                    <li class="menu-item"><a href="services.html">Продукція</a></li>
+                    <li class="menu-item"><a href="about.html">Про нас</a></li>
+                    <li class="menu-item"><a href="contact.html">Контакти</a></li>
+                    <li class="menu-item"><a id="menu" class="menu-item-icon" href="#">&#9776</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__social">
+            <div class="header-social-icon">
+                <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+                <a class="header-button" href="login.html">Вхід</a>
+                <!--                <button class="header-button">Sign up</button>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!------------------------------------------------------------- CONTACT ------------------->
+<section class="contact landing-section">
+    <div class="contact__header">
+        <h3>Звяжіться з нами!</h3>
+    </div>
+    <div class="contact__element">
+        <div class="contact_width contact__element__phone" >
+            <div><h4>Контакти</h4></div>
+            <div>
+                <ul>
+                    <li><img src="../img/build/company/15886.png"><p>+380681111111</p></li>
+                    <li><img src="../img/build/company/whatsapp-png-whatsapp-icon-16.jpg"><p>+380681111102</p></li>
+                    <li><img src="../img/build/company/addres.png"><p>м. Тернопіль вул.Центральна 1а </p></li>
+                    <li><img src="../img/build/company/email.png"><p>landscaping@gmail.com</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact_width contact__element__maps">
+            <div id="map"></div>
+        </div>
+        <div class="contact_width contact__element__form ">
+            <div class="form__wrapper">
+                <form action="../telegramform/php/send-message-to-telegram.php" id="form-contact" method="POST" class="form-element" autocomplete="off">
+                    <h4 class="form-title">Замовте зворотній звязок</h4>
+                    <p class="form-message"></p>
+                    <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Введите ваше имя" required>
+                    <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Введите ваш телефон" required>
+                    <input name="email" type="email" class="form-input__email" tabindex="0" placeholder="Email" required>
+                    <textarea name="message"  class="form-input__message" placeholder="Повідомлення" cols="40" rows="5"></textarea>
+                    <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
+                    <input type="submit" class="form-input__button" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--------------------------------------------------------------- FOOTER ---------------------------------------->
+<section class="footer ">
+    <div class="footer__container">
+        <div class="footer__container-coll-3">
+            <h6 class="footer-name">Landscaping</h6>
+            <p>Вирішить всі ваші проблеми!</p>
+        </div>
+
+        <div class="footer__container-coll-3">
+            <h6 class="footer-social">Наш профіль в соціальних мережах:</h6>
+            <p class="footer-social-icon">
+                <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://vk.com" target="blank"><i class="fa fa-vk"></i></a>
+                <a href="https://twitter.com" target="blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="blank"><i class="fa fa-youtube"></i></a>
+            </p>
+
+        </div>
+
+        <div class="footer__container-coll-3">
+            <h6>Потрібно шось тут написати</h6>
+            <p>Потрібно шось тут написати!</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!--Підключаємо jquery-->
+<script src="../libs/jquery/jquery-3.4.1.min.js"></script>
+
+<!--Підключаємо власний JavaScript-->
+<script src="../js/main.js"></script>
+
+<!--Підключаємо JavaScript для телеграм форми-->
+<script src="../telegramform/js/telegramform.js"></script>
+
+<!--Підключаємо JavaScript для Google Maps-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa0cdtOy9YtkyBqvUutHMsiTzkRayfoWA&callback=initMap"
+        async defer></script>
+</body>
+</html>
