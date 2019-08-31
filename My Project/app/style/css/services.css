@@ -1,0 +1,89 @@
+.services {
+  background-color: #FFFFFF;
+  color: #000;
+  background-image: url("https://st.depositphotos.com/3272633/5161/v/950/depositphotos_51613015-stock-illustration-abstract-geometric-triangle-background-neutral.jpg"); }
+
+.services__header {
+  border-bottom: 1px solid #000; }
+
+.flex__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center; }
+
+.flex__container div {
+  padding: 10px; }
+
+.flex__container div a {
+  color: black;
+  text-align: center;
+  font-size: 17px; }
+
+.flex__container div a:hover {
+  color: green; }
+
+.services__work h3 {
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 20px; }
+
+.services__work--flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0; }
+
+.services__work__item {
+  width: 33.333%;
+  padding: 20px;
+  display: flex; }
+
+.services__work--flex div p {
+  padding-right: 20px; }
+
+.services__work--flex div i {
+  font-size: 100px;
+  align-items: center;
+  color: green; }
+
+.services__work_button {
+  display: block; }
+
+.about-button {
+  width: 100%; }
+
+.about-button a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: 0.2s ease-out;
+  background-color: green;
+  border-radius: 10px;
+  font-weight: 400; }
+
+.about-button a:hover {
+  color: #000000;
+  text-decoration: none;
+  background-color: #0f6f25;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #909090; }
+
+.services__calculator {
+  border-bottom: 1px solid #000; }
+
+@media screen and (max-width: 1020px) {
+  .about-button a {
+    padding: 15px 10px; }
+  .services__work--flex div i {
+    font-size: 85px; } }
+
+@media screen and (max-width: 800px) {
+  .services__work__item {
+    width: 50%; } }
+
+@media screen and (max-width: 700px) {
+  .services__work--flex {
+    display: block; }
+  .services__work--flex div {
+    width: auto; } }

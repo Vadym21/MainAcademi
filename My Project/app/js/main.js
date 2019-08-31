@@ -10,7 +10,7 @@
     });
 });*/
 
-
+//
 //
 // menu.onclick = function menuFunction(){
 //     var x = document.getElementById("myTopmenu");
@@ -25,27 +25,27 @@
 
 
 
-
-//  Анімація тексту на головній сторінці
-$(window).scroll(function() {
-    $('.mov').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+700) {
-            $(this).addClass('fadeInLeft');
-        }
-    });
-});
-
-$(window).scroll(function() {
-    $('.move').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+700) {
-            $(this).addClass('fadeInRight');
-        }
-    });
-});
+//
+// //  Анімація тексту на головній сторінці
+// $(window).scroll(function() {
+//     $('.mov').each(function(){
+//         var imagePos = $(this).offset().top;
+//         var topOfWindow = $(window).scrollTop();
+//         if (imagePos < topOfWindow+700) {
+//             $(this).addClass('fadeInLeft');
+//         }
+//     });
+// });
+//
+// $(window).scroll(function() {
+//     $('.move').each(function(){
+//         var imagePos = $(this).offset().top;
+//         var topOfWindow = $(window).scrollTop();
+//         if (imagePos < topOfWindow+700) {
+//             $(this).addClass('fadeInRight');
+//         }
+//     });
+// });
 
 
  //------------------------------- Карусель на головній сторінці-----------------------------------------------

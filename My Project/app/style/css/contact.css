@@ -1,0 +1,44 @@
+.contact {
+  background-color: #FFFFFF;
+  color: #000;
+  background-image: url("https://st.depositphotos.com/3272633/5161/v/950/depositphotos_51613015-stock-illustration-abstract-geometric-triangle-background-neutral.jpg"); }
+
+.contact__header {
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px; }
+
+.contact__element {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 15px; }
+
+.contact_width {
+  width: 33%;
+  padding: 30px 0; }
+
+.contact__element__phone {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding-left: 10px; }
+
+.contact__element__phone img {
+  width: 24px;
+  float: left;
+  margin: 0 25px 0 0; }
+
+.contact__element__phone ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 20px 0 0 20px; }
+
+.contact__element__maps {
+  height: 100%;
+  margin: 0;
+  padding-top: 90px; }
+
+.contact__element__form {
+  border-left: 1px solid black;
+  border-right: 1px solid black; }
+
+#map {
+  height: 350px; }

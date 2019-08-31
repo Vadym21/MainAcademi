@@ -1,4 +1,5 @@
 @import "../css/form_style.css"
+//@import "../css/media.css"
 
 *
   font-family: 'Abel', sans-serif
@@ -190,6 +191,7 @@ a
   border-bottom: 1px solid #FFFFFF
   padding-bottom: 5px
 
+
 .portfolio-header
   border-bottom: 1px solid #FFF
 
@@ -212,6 +214,10 @@ a
   margin-top: 8px
   vertical-align: middle
   width: 100%
+  transition: transform .2s
+
+.column__image img:hover
+  transform: scale(1.5)
 
 .column__image-text
   position: absolute
@@ -225,8 +231,8 @@ a
   background: rgba(0, 0, 0, 0.7)
   padding: 10px
 
-.column__image-text:hover
-  box-shadow: inset 0 0 28px 6px rgba(0,0,0,0.7)
+//.column__image-text:hover
+//  box-shadow: inset 0 0 28px 6px rgba(0,0,0,0.7)
 
 .portfolio-button
   margin: 50px 0 14px
@@ -395,6 +401,8 @@ a
   .footer__container-coll-3 p
     font-size: 8px
 
+
+
 @media screen and (max-width: 900px)
   .menu-item:last-child
     display: block
@@ -430,8 +438,17 @@ a
   .footer__container-coll-3 p
     padding-top: 0
 
+  //.services__work--flex
+  //  display: block
+  //
+  //.services__work--flex div
+  //  width: auto
+  //
+  //.services__work--flex div i
+  //  font-size: 85px
+
 @media screen and (max-width: 450px)
-  .header-social-icon a
+  .header-social-icon a:not(:last-child)
     display: none
 
   .home-text h1
