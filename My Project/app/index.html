@@ -143,39 +143,52 @@
     <div class="portfolio-header">
         <h3>Портфоліо</h3>
     </div>
-    <div class="portfolio-main">
-                <div class="row">
-            <div class="column">
-                <div class="column__image"><img src="img/build/portfolio/image.jpg"><h2 class="column__image-text"><span >Проект #1</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image2.jpg"><h2 class="column__image-text"><span>Проект #2</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image3.jpg"><h2 class="column__image-text"><span>Проект #3</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image4.jpg"><h2 class="column__image-text"><span>Проект #4</span></h2></div>
-            </div>
 
-            <div class="column">
-                <div class="column__image"><img src="img/build/portfolio/image5.jpg"><h2 class="column__image-text"><span>Проект #5</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image6.jpg"><h2 class="column__image-text"><span>Проект #6</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image7.jpg"><h2 class="column__image-text"><span>Проект #7</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image8.jpg"><h2 class="column__image-text"><span>Проект #8</span></h2></div>
-            </div>
-
-            <div class="column">
-                <div class="column__image"><img src="img/build/portfolio/image9.jpg"><h2 class="column__image-text"><span>Проект #9</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image10.jpg"><h2 class="column__image-text"><span>Проект #10</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image11.jpeg"><h2 class="column__image-text"><span>Проект #11</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image12.jpg"><h2 class="column__image-text"><span>Проект #12</span></h2></div>
-            </div>
-
-            <div class="column">
-                <div class="column__image"><img src="img/build/portfolio/image5.jpg"><h2 class="column__image-text"><span>Проект #5</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image6.jpg"><h2 class="column__image-text"><span>Проект #6</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image7.jpg"><h2 class="column__image-text"><span>Проект #7</span></h2></div>
-                <div class="column__image"><img src="img/build/portfolio/image8.jpg"><h2 class="column__image-text"><span>Проект #8</span></h2></div>
-            </div>
-
+    <div class="portfolio-main" id='posts'>
+        <div class="post all category-b"><img class="myImg" src="img/build/portfolio/image.jpg" alt="Ландшафтний дизайн">
+            <div class="overlay">Ландшафтний дизайн</div>
         </div>
-        <div class="portfolio-button "><a href="views/portfolio.html">Переглянути більше</a></div>
+        <div class="post all category-e"><img class="myImg" src="img/build/portfolio/roof1.jpg" alt="Озеленення даху">
+            <div class="overlay">Озеленення даху</div>
+        </div>
+        <div class="post all category-e"><img class="myImg" src="img/build/portfolio/roof2.jpg" alt="Озеленення даху">
+            <div class="overlay">Озеленення даху</div>
+        </div>
+        <div class="post all category-b"><img class="myImg" src="img/build/portfolio/image2.jpg" alt="Ландшафтний дизайн">
+            <div class="overlay">Ландшафтний дизайн</div>
+        </div>
+        <div class="post all category-d"><img class="myImg" src="img/build/portfolio/topiar1.jpg" alt="Топіарні форми">
+            <div class="overlay">Топіарні форми</div>
+        </div>
+        <div class="post all category-d"><img class="myImg" src="img/build/portfolio/topiar2.jpg" alt="Топіарні форми">
+            <div class="overlay">Топіарні форми</div>
+        </div>
+        <div class="post all category-b"><img class="myImg" src="img/build/portfolio/image3.jpg" alt="Ландшафтний дизайн">
+            <div class="overlay">Ландшафтний дизайн</div>
+        </div>
+        <div class="post all category-c"><img class="myImg" src="img/build/portfolio/basin1.jpg" alt="Басейн">
+            <div class="overlay">Басейн</div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
     </div>
+
+    <div class="portfolio-button ">
+        <a href="views/portfolio.html">Переглянути більше</a>
+    </div>
+
+
 </section>
 
 <!------------------------------------------------------------- COMPANY ------------------->
@@ -275,6 +288,7 @@
 
 <!--Підключаємо власний JavaScript-->
 <script src="js/main.js"></script>
+<script src="js/portfolioFilter.js"></script>
 
 <!--Підключаємо JavaScript для телеграм форми-->
 <script src="telegramform/js/telegramform.js"></script>

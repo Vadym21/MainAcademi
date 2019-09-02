@@ -168,50 +168,131 @@ a {
   color: white;
   box-shadow: 0 10px 11px 0 rgba(140, 138, 140, 0.53); }
 
-.portfolio-main {
-  border-bottom: 1px solid #FFFFFF;
-  padding-bottom: 5px; }
-
 .portfolio-header {
   border-bottom: 1px solid #FFF; }
 
-.row {
+.portfolio-main {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 10px; }
+  justify-content: center;
+  border-top: 1px solid #000000;
+  padding-top: 20px; }
 
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px; }
+.post {
+  margin: 5px;
+  position: relative; }
 
-.column__image {
-  position: relative;
-  width: 100%; }
+.post img {
+  width: 320px;
+  height: 250px; }
 
-.column__image img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  transition: transform .2s; }
-
-.column__image img:hover {
-  transform: scale(1.5); }
-
-.column__image-text {
+.overlay {
   position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 100%; }
-
-.column__image-text span {
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: .7s ease;
+  opacity: 0;
   color: white;
-  font: 24px/45px Helvetica, Sans-Serif;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px; }
+  font-size: 20px;
+  padding: 20px;
+  text-align: center; }
+
+.post:hover .overlay {
+  opacity: 1; }
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; }
+  .myImg:hover {
+    opacity: 0.7; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); }
+
+/* Black w/ opacity */
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px; }
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px; }
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 65px;
+  right: 65px;
+  color: #f1f1f1;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s; }
+  .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }
 
 .portfolio-button {
-  margin: 50px 0 14px; }
+  margin: 50px 0 14px;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 17px; }
 
 .portfolio-button a {
   color: #FFFFFF;
@@ -314,9 +395,6 @@ a {
     padding: 13px 5px; }
   .header-button {
     margin-right: 10px; }
-  .column {
-    flex: 50%;
-    max-width: 50%; }
   .contact__element {
     padding: 20px 0; } }
 
@@ -359,11 +437,6 @@ a {
     padding: 20px 0 0 0; } }
 
 @media screen and (max-width: 700px) {
-  .column {
-    flex: 100%;
-    max-width: 100%; }
-  .row div:last-child {
-    display: none; }
   .choose-items {
     display: block; }
   .choose-items-right {
@@ -390,6 +463,4 @@ a {
   body h5 {
     font-size: 14px; }
   body p {
-    font-size: 10px; }
-  .column__image-text span {
-    font-size: 16px; } }
+    font-size: 10px; } }

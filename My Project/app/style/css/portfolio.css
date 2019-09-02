@@ -1,0 +1,143 @@
+.portfolio {
+  background-color: #FFFFFF;
+  color: black;
+  background-image: url("https://st.depositphotos.com/3272633/5161/v/950/depositphotos_51613015-stock-illustration-abstract-geometric-triangle-background-neutral.jpg"); }
+
+.portfolio-header {
+  border-bottom: 1px solid #000000; }
+
+.portfolio__button {
+  margin: 10px; }
+
+.portfolio__button button {
+  margin: 5px;
+  color: #000000;
+  padding: 5px 5px;
+  transition: 0.2s ease-out;
+  background-color: #04803e;
+  border: 0; }
+
+.portfolio__button button:hover {
+  color: #000000;
+  text-decoration: none;
+  background-color: #0f6f25;
+  box-shadow: 0 1px 5px #909090;
+  border: 0; }
+
+.portfolio-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #000000;
+  padding-top: 20px; }
+
+.post {
+  margin: 5px;
+  position: relative; }
+
+.post img {
+  width: 320px;
+  height: 250px; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: .7s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center; }
+
+.post:hover .overlay {
+  opacity: 1; }
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; }
+  .myImg:hover {
+    opacity: 0.7; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); }
+
+/* Black w/ opacity */
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px; }
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px; }
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 65px;
+  right: 65px;
+  color: #f1f1f1;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s; }
+  .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }

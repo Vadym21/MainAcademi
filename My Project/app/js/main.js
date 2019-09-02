@@ -167,5 +167,40 @@ function initMap() {
 
 }
 
+
+//------------------------------- portfolio-----------------------------------------------
+//
+// $("#filter button").each(function() {
+//     $(this).on("click", function(){
+//         var filtertag = $(this).attr('class');
+//         $('.post').show();
+//         $('.post:not(.' + filtertag + ')').hide();
+//     });
+// });
+// function buttonClick(button) {
+//     alert("hello");
+//     $( "div" )
+//             .css( "background", "#c8ebcc" )
+//             .filter( ".middle" )
+//             .css( "border-color", "red" );
+// }
+//
+// $('div').on('click','.middle',function(){
+//     $( "div" )
+//         .css( "background", "#c8ebcc" )
+//         .filter( ".middle" )
+//         .css( "border-color", "red" );
+// });
+//
+// $(function(){
+//     $('button').bind('click', function(){
+//         if($(this).hasClass("langs")){
+//             $('body').append('<ul><li>Java</li><li>JavaScript</li></ul>');
+//         }
+//         alert('Обработчик события click');
+//     });
+// });
+
+
 // зробити редірект
 //пагінацію
