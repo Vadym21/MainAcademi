@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    background: #06292A;
+    display: flex;
+}
+
+header h2 {
+    color: white;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    margin-left: 100px;
+}
+
+.block__button {
+    display: flex;
+    justify-content: center ;
+}
+
+.button {
+    margin: 30px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: white;
+    border-color: white;
+    background: #06292A;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 30px auto;
+    color: #7B818C;
+
+}
+
+.showTv {
+    color: black;
+    max-width: 1200px;
+    text-align: center;
+    margin: 30px auto;
+}
+.card {
+    display: flex;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card-body {
+    padding-left: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.card-title {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.card-text {
+    line-height: 24px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: white;
+    border-color: white;
+    background: #06292A;
+}
